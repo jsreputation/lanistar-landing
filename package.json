@@ -5,7 +5,7 @@
   "author": "Orhan",
   "private": true,
   "scripts": {
-    "dev": "set NODE_ENV=development rimraf dist && nuxt",
+    "dev": "NODE_ENV=development rimraf dist && nuxt",
     "start": "nuxt start",
     "prebuild": "rimraf dist",
     "build": "set NODE_ENV=production && nuxt build",

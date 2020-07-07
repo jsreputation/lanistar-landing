@@ -245,11 +245,15 @@ export default Vue.extend({
     getContractStatus(user) {
       const list = [
         'Waiting to be contacted',
-        'Contacted / pitch booked',
+        '',
         'Didn\'t attend pitch / to be re-booked',
         'Non contactable / Disappeared',
         'Contract signed',
-        'Contract not signed'
+        'Contract not signed',
+        'Rejected',
+        'Contacted / Pitch booked / Zoom',
+        'Contacted / Pitch booked / HQ',
+        'Contacted / awaiting response'
       ];
       return list[user.contractStatus];
     },
